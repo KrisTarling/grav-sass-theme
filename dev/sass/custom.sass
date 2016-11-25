@@ -1,0 +1,130 @@
+//colors
+
+$color-base: #FCFCFC
+$color-text: #222
+$color-highlight: #29BF12
+$color-heading: #313E50
+
+$color-base-alt: #222
+$color-text-alt: #F3F8F2
+$color-heading-alt: #E4D6A7
+
+
+*
+  box-sizing: border-box 
+
+body
+  font-size: 1rem
+  line-height: 1.7
+  color: $color-text
+  background: $color-base
+
+h1, h2, h3, h4, h5, h6
+  color: $color-heading
+
+a 
+  color: $color-highlight
+  text-decoration: none
+  &:hover
+    color: $color-highlight
+
+pre
+  background: $color-base
+  margin: 1rem 0
+  border-radius: 2px
+
+blockquote
+  border-left: 10px solid $color-highlight
+  margin: 0
+  padding: 0 2rem
+
+
+.wrapper
+  margin: 0 3rem
+
+.padding
+  padding: 3rem 1rem
+
+.left
+  float: left
+
+.right
+  float: right
+
+.text-center
+  text-align: center
+
+.text-right
+  text-align: right
+
+.text-left
+  text-align: left
+
+
+.header
+  .padding
+    padding: 1rem 0
+  background-color: $color-highlight
+  color: $color-base
+  a
+    color: $color-text-alt
+  .logo
+    font-size: 1.7rem
+    text-transform: uppercase
+
+.footer
+  background-color: $color-highlight
+  a
+    color: $color-text-alt
+
+
+.main-nav
+  ul
+    text-align: center
+    letter-spacing: -1em
+    margin: 0
+    padding: 0
+    li
+      display: inline-block
+      letter-spacing: normal
+      a
+        position: relative
+        display: block
+        line-height: 45px
+        color: $color-base
+        padding: 0 20px
+        white-space: nowrap
+      &:hover > a
+        background-color: $color-highlight
+      &.selected > a
+        background-color: $color-base
+        color: $color-highlight
+      position: relative
+      ul
+        position: absolute
+        background-color: $color-highlight
+        min-width: 100%
+        text-align: left
+        z-index: 999
+        display: none
+        li
+          display: block
+        ul
+          left: 100%
+          top: 0
+  > ul > li > a
+    border-radius: 2px
+  li:hover > ul
+    display: block
+  .has-children
+    > a
+      padding-right: 30px
+      &:after
+        font-family: FontAwesome
+        content: '\f107'
+        position: absolute
+        display: inline-block
+        right: 8px
+        top: 0
+    .has-children > a:after
+      content: '\f105'

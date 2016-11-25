@@ -1,0 +1,27 @@
+name: Grav Sass Theme
+version: 0.1.0
+description: a starting point for a sass (not scss) Grav theme. Uses gulp.
+icon: rebel
+author:
+  name: Kris Tarling
+  email: kristarling@gmail.com
+homepage: https://github.com/kris-tarling/grav-sass-theme
+demo: 
+keywords: grav, theme, sass
+bugs: https://github.com/kris-tarling/grav-sass-theme/issues
+readme: https://github.com/kris-tarling/grav-sass-theme/blob/develop/README.md
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in Menu
+        highlight: 1
+        default: 1
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool
