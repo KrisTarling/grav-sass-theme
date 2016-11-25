@@ -9,7 +9,7 @@ homepage: https://github.com/kris-tarling/grav-sass-theme
 demo: 
 keywords: grav, theme, sass
 bugs: https://github.com/kris-tarling/grav-sass-theme/issues
-readme: https://github.com/kris-tarling/grav-sass-theme/blob/develop/README.md
+readme: https://github.com/kris-tarling/grav-sass-theme/README.md
 license: MIT
 
 form:

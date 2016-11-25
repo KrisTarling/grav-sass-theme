@@ -11,7 +11,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #313E50; }
 
 a {
-  color: #29BF12;
+  color: #222;
+  border-bottom: 2px dotted #29BF12;
   text-decoration: none; }
   a:hover {
     color: #29BF12; }
@@ -77,6 +78,7 @@ blockquote {
       display: block;
       line-height: 45px;
       color: #FCFCFC;
+      border-bottom: none;
       padding: 0 20px;
       white-space: nowrap; }
     .main-nav ul li:hover > a {

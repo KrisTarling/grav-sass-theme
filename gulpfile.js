@@ -60,7 +60,7 @@
 
 
     // DEVELOPMENT TASKS
-    gulp.task('dev', ['sass','uglify','svgmin','imagemin'], function(){
+    gulp.task('default', ['sass','uglify','svgmin','imagemin'], function(){
 
         // watch me getting Sassy
         gulp.watch("./dev/sass/**/*.sass", function(event){
